@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <!-- CDN FONT AWESOME  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- LINK CSS  -->
+    <link rel="stylesheet" href="./../css/main.css" />
+    <!-- ICON PAGE  -->
+    <link
+      rel="icon"
+      href="./../img/Wrapstyle-Final-Logo-01-min-p71hxa6v94gv9tjdijpxcsqrtefbgebwik95jokolu.png"
+      type="image/gif"
+      sizes="32x32"
+    />
+  </head>
+  <body>
+    <section class="form">
+      <!-- START SEARCH  -->
+      <div class="search">
+        <input type="text" placeholder="Nhập tên sản phẩm" maxlength="32" />
+        <button>
+          <svg
+            width="20px"
+            height="20px"
+            fill="white"
+            font-weight="bold"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            id="Layer_1"
+            x="0px"
+            y="0px"
+            viewBox="0 0 512 512"
+            style="enable-background: new 0 0 512 512"
+            xml:space="preserve"
+          >
+            <g>
+              <g>
+                <path
+                  d="M508.875,493.792L353.089,338.005c32.358-35.927,52.245-83.296,52.245-135.339C405.333,90.917,314.417,0,202.667,0    S0,90.917,0,202.667s90.917,202.667,202.667,202.667c52.043,0,99.411-19.887,135.339-52.245l155.786,155.786    c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125C513.042,504.708,513.042,497.958,508.875,493.792z     M202.667,384c-99.979,0-181.333-81.344-181.333-181.333S102.688,21.333,202.667,21.333S384,102.677,384,202.667    S302.646,384,202.667,384z"
+                />
+              </g>
+            </g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+          </svg>
+        </button>
+      </div>
+      <!-- END SEARCH  -->
+
+      <!-- START PANIGATION  -->
+      <div class="paginationcustoms">
+        <button>Prev</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>Next</button>
+      </div>
+      <!-- END PANIGATION  -->
+
+      <!-- START DROPDOWN  -->
+      <div class="dropdown">
+        <div class="dropdown-content">
+          <input type="button" value="all" disabled />
+        </div>
+        <div id="dropdownButton"></div>
+      </div>
+      <!-- END DROPDOWN  -->
+
+      <!-- START TABLE  -->
+      <table class="tablecustoms">
+        <tr>
+          <th>stt</th>
+          <th>id</th>
+          <th>name</th>
+          <th>cmnd</th>
+          <th>phone</th>
+          <th>nơi sinh</th>
+          <th>thao tác</th>
+        </tr>
+        <tr>
+          <td>
+            <p>1</p>
+          </td>
+          <td><p>PS9999</p></td>
+          <td><p>Lại Hợp Sâm</p></td>
+          <td><p>025896081</p></td>
+          <td><p>0985929816</p></td>
+          <td>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex
+              corporis omnis cupiditate obcaecati, veritatis dolore rem quaerat
+              magnam voluptates architecto, doloremque enim id laboriosam?
+              Tempora fugiat ipsum minima unde necessitatibus?
+            </p>
+          </td>
+          <td>
+            <button>Update</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+      </table>
+      <!-- END TABLE  -->
+    </section>
+    <!-- Optional JavaScript -->
+    <div class="successAnnounce">
+      <div class="successAnnounce__iconClose">
+        <i class="fa fa-times"></i>
+      </div>
+      <div class="successAnnounce__green">
+        <p>Thanks you account has been successfully created</p>
+      </div>
+      <div class="successAnnounce__gray">
+        Congratulation , Lai Hop Sam you have singed up successfully. Wish you
+        have a nice experience
+      </div>
+      <div class="successAnnounce__button">
+        <button>OK</button>
+      </div>
+    </div>
+
+    <div class="successAnnounce">
+      <div class="successAnnounce__iconClose">
+        <i class="fa fa-times"></i>
+      </div>
+      <div class="successAnnounce__green">
+        <p>Thanks you account has been successfully created</p>
+      </div>
+      <div class="successAnnounce__gray">
+        Congratulation , Lai Hop Sam you have singed up successfully. Wish you
+        have a nice experience
+      </div>
+      <div class="successAnnounce__button">
+        <button>OK</button>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+      var dropdown = document.querySelector("dropdown");
+      var touchDropdown = document.getElementById("dropdownButton");
+      touchDropdown.onclick = function () {
+        // show button
+        touchDropdown.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>

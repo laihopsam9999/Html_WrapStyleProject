@@ -1,0 +1,410 @@
+.wrappingmain{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4rem 4rem;
+}
+.collection{
+    display: flex;
+    height: 35rem;
+    position: relative;
+
+    .collection__content{
+        
+        .collection__content--content{
+            padding: 4rem 9rem;
+            text-align: left;
+            width: 80%;
+           line-height: 1.5rem;
+           h1{
+            line-height: 3rem;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+           }
+        }
+    }
+    .collection__image1{
+        img{
+            object-fit: cover;
+            object-position: 120px -130px;
+            clip-path: polygon(100% 0, 41% 89%, 100% 89%);
+            position: absolute;
+            width: 48%;
+            height: 100%;
+            top: 0px;
+            right: 0px;
+        }
+    }
+    .collection__image2{
+        img{     
+            position: absolute;
+            clip-path: polygon(11% 0, 83% 0%, 67% 100%, 0 100%, 0% 38%);
+            object-fit: cover;
+            width: 100%;
+            height: 50%;
+            bottom: 0px;
+            left: 0px;
+        }
+    }
+}
+
+.collectioncar{
+    display: flex;
+    height: 35rem;
+    position: relative;
+    .collectioncar__image1{
+        img{
+            object-fit: cover;
+            object-position: center center;
+            clip-path: polygon(0 11%, 0% 100%, 37% 11%);
+            position: absolute;
+            width: 80%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+        }
+    }
+
+    .collectioncar__content{
+        .collectioncar__content--button{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        width: 100%;
+        height: 50%;
+        bottom: 0px;
+        left: 0px;
+        line-height: 1.5rem;
+        padding: 0rem 13rem;
+    button{
+        padding: 1rem 1rem;
+        display: block;
+        width: 100%;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        border: none;
+        background-color: transparent;
+        border-bottom: solid 1px black;
+        cursor: pointer;
+        &:hover{
+            background-color: $color_black2;
+            color: white;
+            transition: all 0.3s;
+        }
+    }
+    .shopbutton__left{
+        margin: 1rem;
+        width: 100%;
+    }
+    .shopbutton__right{
+        margin: 1rem;
+        width: 100%;
+    }
+           h1{
+            line-height: 3rem;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+           }
+        }
+    }
+    .collectioncar__image2{
+        img{  
+            position: absolute;
+            clip-path: polygon(100% 0, 100% 50%, 88% 100%, 18% 100%, 34% 0);
+            object-fit: cover;
+            width: 100%;
+            height: 50%;
+            top: 0px;
+            right: 0px;
+        }
+    }
+}
+/*Iphone(480 x 640)*/
+@media screen and (min-width: 320px){
+    .collection{
+        display: flex;
+        height: 35rem;
+        position: relative;
+    
+        .collection__content{
+           
+            .collection__content--content{
+                padding: 2.5rem 2rem;
+                text-align: left;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.507);
+                color: white;
+                line-height: 1.8rem;
+               h1{
+                line-height: 2.1rem;
+                font-size: 1.8rem;
+               }
+            }
+        }
+        .collection__image1{
+            display: none;
+        }
+        .collection__image2{
+            img{     
+                // clip-path: polygon(11% 0, 83% 0%, 67% 100%, 0 100%, 0% 38%);
+                clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+                object-fit: cover;
+                height: 100%;
+                top: 0px;
+                z-index: -1;
+            }
+        }
+    }
+    .collectioncar{
+        .collectioncar__image1{
+            display: none;
+        }
+    
+        .collectioncar__content{
+            .collectioncar__content--button{
+            display: block;
+            line-height: 1.5rem;
+            padding: 0rem 0rem;
+            margin: 0rem;
+        .shopbutton__left{
+            margin: 0rem;
+        }
+        .shopbutton__right{
+            margin: 0rem;
+        }
+            }
+        }
+        .collectioncar__image2{
+            img{  
+                // clip-path: polygon(100% 0, 100% 50%, 88% 100%, 18% 100%, 34% 0);
+                clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+            }
+        }
+    }
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (min-width: 480px){
+    .collection{
+        display: flex;
+        height: 35rem;
+        position: relative;
+    
+        .collection__content{
+           
+            .collection__content--content{
+                padding: 2.5rem 2rem;
+                text-align: left;
+                width: 100%;
+                height: 80%;
+                background-color: rgba(0, 0, 0, 0.507);
+                color: white;
+                line-height: 1.8rem;
+               h1{
+                line-height: 2.4rem;
+                font-size: 1.8rem;
+               }
+            }
+        }
+        .collection__image1{
+            display: none;
+        }
+        .collection__image2{
+            img{     
+                // clip-path: polygon(11% 0, 83% 0%, 67% 100%, 0 100%, 0% 38%);
+                clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+                object-fit: cover;
+                height: 80%;
+                top: 0px;
+                z-index: -1;
+            }
+        }
+    }
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (min-width: 768px){
+    .collection{
+        display: flex;
+        height: 35rem;
+        position: relative;
+        // background-color: red;
+        .collection__content{
+           
+            .collection__content--content{
+                padding: 2.5rem 2rem;
+                text-align: left;
+                width: 100%;
+                height: 100%;
+                background-color: transparent;
+                color: black;
+                line-height: 1.8rem;
+               h1{
+                line-height: 2.4rem;
+                font-size: 1.8rem;
+               }
+            }
+        }
+        .collection__image1{
+            display: none;
+        }
+        .collection__image2{
+            img{     
+                // clip-path: polygon(11% 0, 83% 0%, 67% 100%, 0 100%, 0% 38%);
+                clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+                object-fit: cover;
+                height: 50%;
+                top: 17.5rem;
+                // bottom: 0px;
+                z-index: 1;
+            }
+        }
+    }
+    .collectioncar{
+        .collectioncar__image1{
+          display: none;
+        }
+    
+        .collectioncar__content{
+            .collectioncar__content--button{
+            display: flex;
+            bottom: 0px;
+            left: 0px;
+            line-height: 1.5rem;
+            padding: 0rem 4rem;
+        .shopbutton__left{
+            margin: 1rem;     
+        }
+        .shopbutton__right{
+            margin: 1rem;
+        }
+               h1{
+                line-height: 3rem;
+                font-size: 1.8rem;
+                text-transform: uppercase;
+               }
+            }
+        }
+        .collectioncar__image2{
+            img{  
+                // clip-path: polygon(100% 0, 100% 50%, 88% 100%, 18% 100%, 34% 0);
+                clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+            }
+        }
+    }
+}
+/*Ipad ngang(1024 x 768)*/
+@media screen and (min-width: 1024px){
+    .collection{
+        display: flex;
+        height: 35rem;
+        position: relative;
+        // background-color: red;
+        .collection__content{
+           
+            .collection__content--content{
+                padding: 2.5rem 2rem;
+                text-align: left;
+                width: 100%;
+                height: 100%;
+                background-color: transparent;
+                color: black;
+                line-height: 1.8rem;
+               h1{
+                line-height: 2.4rem;
+                font-size: 1.8rem;
+               }
+            }
+        }
+        .collection__image1{
+            display: none;
+        }
+        .collection__image2{
+            img{     
+                // clip-path: polygon(11% 0, 83% 0%, 67% 100%, 0 100%, 0% 38%);
+                clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+                object-fit: cover;
+                height: 50%;
+                top: 17.5rem;
+                // bottom: 0px;
+                z-index: 1;
+            }
+        }
+    }
+    
+}
+@media screen and (min-width: 1200px){
+    .collection{
+        display: flex;
+        height: 35rem;
+        position: relative;
+    
+        .collection__content{
+            .collection__content--content{
+                padding: 4rem 9rem;
+                width: 80%;
+               line-height: 1.5rem;
+               h1{
+                line-height: 3rem;
+                font-size: 1.8rem;
+               }
+            }
+        }
+        .collection__image1{
+            display: block;
+            img{
+                object-fit: cover;
+                object-position: 120px -130px;
+                clip-path: polygon(100% 0, 41% 89%, 100% 89%);
+                position: absolute;
+                width: 48%;
+                height: 100%;
+                top: 0px;
+                right: 0px;
+            }
+        }
+        .collection__image2{
+            img{     
+                position: absolute;
+                clip-path: polygon(11% 0, 83% 0%, 67% 100%, 0 100%, 0% 38%);
+                object-fit: cover;
+                width: 100%;
+                height: 50%;
+                bottom: 0px;
+                left: 0px;
+            }
+        }
+    }
+    .collectioncar{
+        .collectioncar__image1{
+          display: block;
+        }
+    
+        .collectioncar__content{
+            .collectioncar__content--button{
+            display: flex;
+            bottom: 0px;
+            left: 0px;
+            line-height: 1.5rem;
+            padding: 0rem 13rem;
+        .shopbutton__left{
+            margin: 1rem;     
+        }
+        .shopbutton__right{
+            margin: 1rem;
+        }
+               h1{
+                line-height: 3rem;
+                font-size: 1.8rem;
+                text-transform: uppercase;
+               }
+            }
+        }
+        .collectioncar__image2{
+            img{  
+                clip-path: polygon(100% 0, 100% 50%, 88% 100%, 18% 100%, 34% 0);
+            }
+        }
+    }
+}

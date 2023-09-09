@@ -1,0 +1,79 @@
+.carfuture {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0rem 5rem 0rem;
+    height: 100%;
+    .carfuture__image{
+        // background-color: red;
+        width: 100%;
+        img {
+        width: 100%;
+        height: 100%;
+        // display: block;
+        clip-path: polygon(0 0, 100% 0%, 65% 100%, 0% 100%);
+    }
+}
+   
+
+    .carfuture__content {
+        width: 60%;
+        max-height: 100%;
+        text-align: left;
+        line-height: 1.8rem;
+        letter-spacing: 0.5px;
+        padding: 0em 3rem;
+        h1 {
+            margin-bottom: 1rem;
+            line-height: 2rem;
+        }
+    }
+}
+/*Smart phone nhỏ*/
+@media screen and (min-width: 240px){
+    .carfuture {
+        display: block;
+        padding: 1rem;
+    
+        .carfuture__image{
+            img {
+            clip-path: none;
+        }
+    }
+        .carfuture__content {
+            width: 100%;
+            padding: 0rem;
+            margin: 1.5rem 0rem;
+        }
+    }
+}
+/*Iphone(480 x 640)*/
+@media screen and (min-width: 320px){
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (min-width: 480px){
+    
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (min-width: 768px){
+    
+}
+/*Ipad ngang(1024 x 768)*/
+@media screen and (min-width: 1200px){
+    .carfuture {
+        display: flex;
+        padding: 5rem 0rem 5rem 0rem;
+    
+        .carfuture__image{
+            img {
+            clip-path: polygon(0 0, 100% 0%, 65% 100%, 0% 100%);
+        }
+    }
+        .carfuture__content {
+            width: 60%;
+        padding: 0em 3rem;
+       
+        }
+    }
+}   

@@ -1,0 +1,280 @@
+// START CARD TITLE HOVER  
+.cardTitleHover{
+    img{
+        width: 100%;
+        height: 100%;
+        transform: scale(1);
+        transition: all 1s;
+        display: block;
+        object-fit: cover;
+    }
+        .cardTitleHover-image{
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            &:hover img{
+                transform: scale(1.1);
+            }
+        }
+
+        .cardTitleHover-title{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: rgba(0, 0, 0, 0.442);
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 1s;
+            &:hover {
+                background-color: transparent;
+                transition: all 1s;
+            }
+            h1{
+                text-transform: uppercase;
+                font-size: 2rem;
+                color: white;
+            }
+    }
+}
+// END CARD TITLE HOVER  
+
+// START CARD CONTENT  
+.cardcontent { 
+    .cardcontent__title {
+      }
+      .cardcontent__content {
+       
+         img{
+                width: 100%;
+                height: 100%;
+                display: block;
+                object-fit: none;
+        }
+        .cardcontent-care{
+          position: relative;
+          margin: 1rem 1rem;
+         .cardcontent-care__content {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.486);
+          padding: 2rem 1rem;
+          display: flex;
+          justify-content:center;
+          align-items: center;
+          flex-wrap: wrap;
+            h1 {
+              text-transform: uppercase;
+              color: white;
+              font-size: 2rem;
+              line-height: 2.8rem;
+              height: 20%;
+              
+              }
+               p {
+                font-weight: 300;
+                line-height: 1.8rem;
+                text-align: left;
+                color: white;
+              }
+           }
+     }
+  
+      }
+  
+  }
+// END CARD CONTENT
+
+.cardProduct{
+margin: 1.5rem 1rem;
+background-color: white;
+overflow: hidden;
+border-radius: 10px;
+box-shadow: 0 0 4px 4px rgb(214, 211, 211);
+.cardProductImage{
+  object-fit: cover;
+  img{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  cursor: pointer;
+}
+.cardProductContent{
+  cursor: pointer;
+  padding: 1rem;
+  h2{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+    margin: 1rem 0rem;
+     &:hover{
+      color: gray;
+    }
+  }
+  
+}
+}
+/*Smart phone nhỏ*/
+@media screen and (min-width: 240px){
+    // START CARDTITLEHOVER MOBLIEFRIST
+    .cardTitleHover{
+            .cardTitleHover-title{
+                h1{
+                    font-size: 1.5rem;
+                }
+        }
+    }
+    //  END CARDTITLEHOVER MOBLIEFRIST
+
+   // START CARD CONTENT  
+   .cardcontent { 
+      .cardcontent__content {
+        .cardcontent-care{
+          position: relative;
+          margin: 0rem 0rem;
+         .cardcontent-care__content {
+            h1 {
+              text-transform: uppercase;
+              color: white;
+              font-size: 1.5rem;
+              line-height: 2rem;
+              height: 20%;
+              
+              }
+               p {
+                font-weight: 300;
+                line-height: 1.5rem;
+                text-align: left;
+                color: white;
+              }
+           }
+     }
+  
+      }
+  
+     }
+   // END CARD CONTENT
+}
+
+/*Iphone(480 x 640)*/
+@media screen and (min-width: 320px){
+// START CARD CONTENT  
+.cardcontent { 
+    .cardcontent__content {
+
+      .cardcontent-care{
+        position: relative;
+        margin: 0rem 0rem;
+       .cardcontent-care__content {
+          h1 {       
+            font-size: 1.6rem;
+            line-height: 2rem;    
+            }
+             p {
+              line-height: 1.7rem;
+            }
+         }
+   }
+
+    }
+
+}
+// END CARD CONTENT
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (min-width: 480px){
+    // START CARDTITLEHOVER MOBLIEFRIST 
+    .cardTitleHover{
+        .cardTitleHover-title{
+            h1{
+                font-size: 2rem;
+            }
+    }
+}
+    //  END CARDTITLEHOVER MOBLIEFRIST 
+
+    // START CARD CONTENT  
+   .cardcontent { 
+    .cardcontent__content {
+
+      .cardcontent-care{
+        position: relative;
+        margin: 0rem 0rem;
+       .cardcontent-care__content {
+          h1 {       
+            font-size: 2rem;
+            line-height: 2.6rem;    
+            }
+             p {
+              line-height: 1.7rem;
+            }
+         }
+   }
+
+    }
+
+   }
+// END CARD CONTENT
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (min-width: 768px){
+    
+}
+/*Ipad ngang(1024 x 768)*/
+@media screen and (min-width: 1024px){
+   // START CARD CONTENT  
+.cardcontent { 
+    .cardcontent__title {
+      }
+      .cardcontent__content {
+         img{
+                width: 100%;
+                height: 100%;
+                display: block;
+        }
+        .cardcontent-care{
+          position: relative;
+          margin: 1rem 1rem;
+         .cardcontent-care__content {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.486);
+          padding: 2rem 1rem;
+          display: flex;
+          justify-content:center;
+          align-items: center;
+          flex-wrap: wrap;
+            h1 {
+              text-transform: uppercase;
+              color: white;
+              font-size: 2rem;
+              line-height: 2.8rem;
+              height: 20%;
+              
+              }
+               p {
+                font-weight: 300;
+                line-height: 1.8rem;
+                text-align: left;
+                color: white;
+              }
+           }
+     }
+  
+      }
+  
+  }
+// END CARD CONTENT
+}
+

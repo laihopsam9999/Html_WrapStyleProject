@@ -1,0 +1,57 @@
+.collectioncar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 35rem;
+  position: relative;
+}
+
+.collectioncar .collectioncar__content .collectioncar__content--link {
+  width: 100%;
+  width: 20%;
+  padding: 0rem 1rem;
+  text-align: left;
+}
+
+.collectioncar .collectioncar__content .collectioncar__content--link p {
+  padding: 1rem 4rem;
+}
+
+.collectioncar .collectioncar__content .collectioncar__content--content {
+  padding: 2.5rem 9rem;
+  text-align: left;
+  width: 80%;
+  line-height: 1.5rem;
+}
+
+.collectioncar .collectioncar__content .collectioncar__content--content h1 {
+  line-height: 3rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.collectioncar .collectioncar__image1 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 120px -130px;
+     object-position: 120px -130px;
+  -webkit-clip-path: polygon(100% 0, 41% 74%, 100% 74%);
+          clip-path: polygon(100% 0, 41% 74%, 100% 74%);
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+}
+
+.collectioncar .collectioncar__image2 img {
+  position: absolute;
+  -webkit-clip-path: polygon(11% 0, 83% 0%, 67% 100%, 0 100%, 0% 38%);
+          clip-path: polygon(11% 0, 83% 0%, 67% 100%, 0 100%, 0% 38%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 50%;
+  bottom: 0px;
+  left: 0px;
+}

@@ -1,0 +1,72 @@
+// 1. BUTTON EXTENDS
+.button {
+    @include button($color_gray, $color-trans, $color_black1, $font-size1+0.9);
+    position: relative;
+    margin: 2rem 0rem;
+    padding: 0.9rem 2.7rem;
+    overflow: hidden;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 0;
+    font-weight: 300;
+
+    &::before {
+        @include before(" ", $width-nomal, $height-0, $position-2, $color_black2, $transition-1, $bottom-1+-10, $left-5);
+        transform: skewX(40deg);
+        z-index: -1;
+    }
+
+    &:hover {
+        @include HoverButton($color_black2, $color-trans, $color_white1);
+
+        &::before {
+            width: $width-0+40;
+            height: $height-1;
+            transition: $transition-1;
+        }
+    }
+
+}
+
+.hexagon_button {
+    .frame {
+        margin: 2rem;
+        position: $position-1;
+        cursor: $cursor-normal;
+
+        &:hover .hex-inner {
+            background-color: $color_white1;
+        }
+
+        &:hover .label {
+            transform: scale(1);
+            color: $color_black1;
+        }
+
+        .hex-outer {
+            background: $color-trans;
+            width: $width-1+-1.5;
+            height: $height-1+-3;
+            border-left: 1.3px solid $color_white1;
+            border-right: 1.3px solid $color_white1;
+            position: $position-2;
+        }
+
+        .hex-inner {
+            background: $color-trans;
+            width: $width-1+-1.5;
+            height: $height-1+-3;
+            position: $position-2; // chú ý
+        }
+
+
+        .h2 {
+            transform: rotate(60deg);
+        }
+
+        .h3 {
+            transform: rotate(-60deg);
+        }
+
+    }
+}

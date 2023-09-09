@@ -1,0 +1,34 @@
+.designgarage{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0rem 0rem;
+}
+.designgarage__model--image1{
+    grid-column: 3 / span  2;
+    grid-row: 1 / span 2;
+}
+
+/*Smart phone nhỏ*/
+@media screen and (min-width: 240px){
+    .designgarage{
+        display: block;
+    }
+}
+/*Iphone(480 x 640)*/
+@media screen and (min-width: 320px){
+    
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (min-width: 480px){
+    
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (min-width: 768px){
+    .designgarage{
+        display: grid;
+    }
+}
+/*Ipad ngang(1024 x 768)*/
+@media screen and (min-width: 1024px){
+    
+}

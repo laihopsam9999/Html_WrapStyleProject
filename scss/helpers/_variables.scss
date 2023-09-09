@@ -1,0 +1,143 @@
+//Color_variables
+$color-trans:transparent;
+$color_white1 : #fff;
+$color_white2 : #ebebe6;
+$color_white3 : #f8f8f7;
+$color_black1 : black;
+$color_black2 : #181818;
+$color_purple : #6f42c1;
+$color_indigo : #6610f2;
+$color_blue1 : #64acff;
+$color_blue2 : #3b6aee;
+$color_blue3 : #e83e8c;
+$color_red2 : #dc3545;
+$color_red1 : #d9352b;
+$color_orange : #fd7e14;
+$color_yellow : #dfb400;
+$color_cyan : #17a2b8;
+$color_teal : #20c997;
+$color_gray : #464646;
+$color_gray-dark : #343a40;
+$color_primary : #007bff;
+$color_success : #28a745;
+$color_gradian : linear-gradient(-90deg, #64acff 40%, #3b6aee 50%, #d9352b 10%);
+
+
+//Padding_variables
+$pd-0:0rem;
+$pd-1:1rem;
+$pd-2:3rem;
+$pd-3:5rem;
+$pd-4:7rem;
+
+//Margin variables
+$mg-0:0rem;
+$mg-1:1rem;
+$mg-2:3rem;
+$mg-3:5rem;
+$mg-4:7rem;
+
+//Aligh Item_variables
+$aligh-item1:center;
+$aligh-item2:stretch;
+$aligh-item3:flex-start;
+$aligh-item4:flex-end;
+$aligh-item5:center;
+
+//Justify_variables
+$justify1:center;
+$justify2:flex-end;
+$justify3:space-between;
+$justify4:space-around;
+$justify5:flex-start;
+
+//Text_Aligh_variables
+$text-aligh1:center;
+$text-aligh2:left;
+$text-aligh3:right;
+
+//Line_height_variables
+$line-height1:0rem;
+$line-height2:1.5rem;
+$line-height3:3rem;
+
+
+//Letter_spacing_variable
+$letter-spacing1:0rem;
+$letter-spacing2:1px;
+$letter-spacing3:2px;
+
+
+//font_size_variable
+$font-size1:0rem;
+$font-size2:3rem;
+$font-size3:5rem;
+$font-size4:7rem;
+$font-size5:9rem;
+
+//font_weight_variable
+$fw-normal: 300;
+$fw-bold-0: 500;
+$fw-bold-1: 700;
+$fw-bold: bold;
+
+//z-index_variable
+$z-index1:-1;
+$z-index2:0;
+$z-index3:1;
+
+//variable height
+$height-nomal :0rem;
+$height-0 :100%;
+$height-1 :5rem;
+$height-2 :10rem;
+$height-3 :15rem;
+$height-4 :20rem;
+$height-5 :50vh;
+$height-6 :100vh;
+
+
+//variable width
+$width-nomal :0rem;
+$width-0 :100%;
+$width-1 :5rem;
+$width-2 :10rem;
+$width-3 :15rem;
+$width-4 :20rem;
+
+$position-1: relative;
+$position-2: absolute;
+
+$top-1: 0px;
+$top-2: -10px;
+$top-3: -15px;
+$top-4: -20px;
+
+$bottom-1: 0px;
+$bottom-2: -10px;
+$bottom-3: -15px;
+$bottom-4: -20px;
+$bottom-5: -100%;
+
+$left-1: 0px;
+$left-2: -10px;
+$left-3: -15px;
+$left-4: -20px;
+$left-5: -20%;
+
+$display-flex : flex;
+$display-grid : grid;
+$display-inline : inline;
+$display-block : block;
+
+$cursor-normal: pointer;
+
+$text-decoration_none : none;
+
+$transition-1: all 0.5s ease;
+
+$text-transform-1: uppercase;
+
+$list-style_none: none;
+// variables font-family
+$font-family-1:'Roboto';

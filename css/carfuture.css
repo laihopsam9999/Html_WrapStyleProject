@@ -1,0 +1,4 @@
+.carfuture img {
+  -webkit-clip-path: polygon(13% 0, 100% 0, 68% 100%, 13% 100%);
+          clip-path: polygon(13% 0, 100% 0, 68% 100%, 13% 100%);
+}

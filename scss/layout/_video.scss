@@ -1,0 +1,33 @@
+.video {
+    position: relative;
+    object-fit: cover !important;
+    height: 100%;
+    width: 100%;
+    margin-top: 6rem;
+    .video__clip{
+            video{
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+    }
+    .video__title {
+        background-color: $color_black1;
+        @include positionLayout($position-2, $top-1, $left-1, $z-index3);
+        @include pageLayout($width-0+-50, $height-0, $pd-3, $pd-3+-2, $color-trans);
+
+        h1 {
+            color: rgb(255, 255, 255);
+            font-size: 5rem;
+            text-transform: uppercase;
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .video{
+        margin-top: 12vh;
+        .video__title{
+            display: none;
+        }
+    }
+  }

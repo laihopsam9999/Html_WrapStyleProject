@@ -1,0 +1,36 @@
+.introduceService__title{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 3rem 0rem;
+    font-size: 2rem;
+}
+
+.introduceService {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    .introduceService__model--image{
+        .introduceService__model--title{
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .introduceService {
+        grid-template-columns: repeat(1,1fr);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .introduceService {
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .introduceService {
+        grid-template-columns: repeat(3,1fr);
+    }
+  }

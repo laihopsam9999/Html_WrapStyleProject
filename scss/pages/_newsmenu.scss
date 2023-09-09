@@ -1,0 +1,124 @@
+.newsmenu {
+  margin-top: 6rem;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 4rem;
+  text-transform: uppercase;
+}
+
+.newsmenu img {
+  width: 100%;
+  height: 100%;
+}
+
+.newsmenu-content--body {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+}
+
+.newsmenu-content__fristContent--time p {
+  font-weight: 300;
+}
+
+.newsmenu-content__fristTitle {
+  font-size: 3rem;
+  text-align: left;
+  margin: 2rem 0rem;
+  display: none;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+.newsmenu-content__frist {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem;
+}
+
+.newsmenu-content__fristContent {
+  text-align: left;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  padding: 0rem 2rem;
+}
+
+.newsmenu-content__fristImage img {
+  width: 700px;
+  height: 100%;
+}
+
+.newsmenu-content__fristContent--title h1 {
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: 1.3;
+  letter-spacing: 0.01rem;
+}
+
+.newsmenu-content__fristContent--button button {
+  background-color: transparent;
+  border: 1px solid rgb(196, 196, 196);
+  padding: 1rem 4rem;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px) {
+  .newsmenu {
+    padding: 0rem 1rem;
+  }
+
+  .newsmenu-content--body {
+    display: block;
+    width: 100%;
+    padding: 0rem;
+  }
+
+  .newsmenu-content__frist {
+    display: block;
+    margin-bottom: 3rem;
+  }
+
+  .verticalnews-write {
+    display: block;
+  }
+
+  .newsmenu-content__fristContent--button button {
+    display: none;
+  }
+
+  .verticalnews-content--button button {
+    display: none;
+  }
+
+  .newsmenu-content__fristContent {
+    padding: 0rem 0rem;
+  }
+
+  .newsmenu-content__fristImage img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .newsmenu-content__fristContent--title h1 {
+    font-size: 1.7rem;
+    line-height: 1.3;
+    letter-spacing: 0.01rem;
+  }
+
+  .newsmenu-content__fristContent--time {
+    margin: 1rem 0rem;
+  }
+
+  .newsmenu-content__fristTitle {
+    display: block;
+  }
+}

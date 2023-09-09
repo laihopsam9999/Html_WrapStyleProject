@@ -1,0 +1,95 @@
+.material {
+    position: relative;
+    overflow: hidden;
+    height: 20rem;
+    .material__img {
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+    }
+
+    .material__content {
+        @include positionLayout($position-2, $top-1, $left-1, $z-index2);
+        @include pageLayout($width-0, $height-0, $pd-4+1, $pd-3, $color-trans);
+        text-transform: $text-transform-1;
+        color: white;
+
+        h1 {
+            font-size: 4.3rem;
+            line-height: 5rem;
+        }
+
+        h5 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+/*Smart phone nhỏ*/
+@media screen and (min-width: 240px){
+    .material {
+        .material__img {
+            img {
+                width: 200%;
+            }
+        }
+        .material__content {
+            padding: 1rem;
+            h1 {
+                font-size: 1.7rem;
+                line-height: 2rem;
+            }
+    
+            h5 {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+/*Iphone(480 x 640)*/
+@media screen and (min-width: 320px){
+
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (min-width: 480px){
+    .material {
+        .material__img {
+            img {
+                width: 100%;
+            }
+        }
+        .material__content {
+            h1 {
+                font-size: 1.7rem;
+                line-height: 2rem;
+            }
+            h5 {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (min-width: 768px){
+    .material {
+        .material__content {
+            h1 {
+                font-size: 2.8rem;
+                line-height: 3rem;
+            }
+            h5 {
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+/*Ipad ngang(1024 x 768)*/
+@media screen and (min-width: 1024px){
+  
+}

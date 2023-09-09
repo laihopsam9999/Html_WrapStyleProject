@@ -1,0 +1,93 @@
+.accessorymain{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0rem 4rem;
+}
+.introservice{
+       display: flex;
+       justify-content: center;
+       padding: 4rem 4rem 3rem 5rem;
+       .introservice__image{
+        object-fit: cover;
+           img{
+               display: block;
+               width: 100%;
+               height: 100%;
+           }
+       }
+       .introservice__content{
+           padding: 0rem 4rem;
+           line-height: 1.6rem;
+           h1{
+               text-transform: uppercase;
+               margin: 2rem 0rem;
+           }
+       }
+}
+
+/*Smart phone nhỏ*/
+@media screen and (min-width: 240px){
+    .accessorymain{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0rem 0rem;
+    }
+    .introservice{
+        display: flex;
+        padding: 0rem;
+        .introservice__image{
+         display: none;
+        }
+        .introservice__content{
+            padding: 0rem 2rem;
+   
+        }
+ }
+}
+/*Iphone(480 x 640)*/
+@media screen and (min-width: 320px){
+    
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (min-width: 480px){
+    
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (min-width: 768px){
+    .accessorymain{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .introservice{
+        display: flex;
+        padding: 2rem 4rem 2rem 1rem;
+        .introservice__image{
+         display: none;
+        }
+        .introservice__content{
+            padding: 0rem 2rem;
+    
+        }
+ }
+}
+/*Ipad ngang(1024 x 768)*/
+@media screen and (min-width: 1024px){
+    .accessorymain{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .introservice{
+        .introservice__image{
+         display: block;
+        }
+ }
+}
+@media screen and (min-width: 1200px){
+    .accessorymain{
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0rem 4rem;
+    }
+    .introservice{
+        padding: 4rem 4rem 3rem 5rem;
+        .introservice__content{
+            padding: 0rem 4rem;
+        }
+ }
+}

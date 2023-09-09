@@ -1,0 +1,25 @@
+.flagship{
+    display: flex;
+    padding: 3rem 8rem;
+    height: 40rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    .flagship__content{
+        background-color: rgb(218, 218, 218);
+        height: 100%;
+        text-align: left;
+        padding: 2rem;
+        line-height: 2rem;
+        h1{
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+    }
+    img{
+        object-fit: cover;
+        width: 38%;
+        height: 100%;
+    }
+}

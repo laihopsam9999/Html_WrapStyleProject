@@ -1,0 +1,193 @@
+.banner {
+    margin-top: 6rem;
+    position: relative;
+    overflow: hidden;
+    .banner__img {
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+
+    .banner__content {
+        @include positionLayout($position-2, $top-1, $left-1, $z-index2);
+        @include pageLayout($width-0, $height-0, $pd-2, $pd-3, $color-trans);
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        text-align: left;
+        flex-flow: column nowrap;
+        text-transform: $text-transform-1;
+        color: white;
+
+        div {
+            margin: 1rem;
+        }
+
+        .banner__content--link {
+            margin: 0px;
+
+            p {
+                font-size: 0.7rem;
+                letter-spacing: 2px;
+                font-weight: 500;
+            }
+        }
+
+        .banner__content--title {
+            width: 60%;
+
+            h1 {
+                font-size: 6rem;
+                line-height: 6rem;
+            }
+
+            h5 {
+                font-size: 2rem;
+                line-height: 4rem;
+            }
+        }
+
+    }
+}
+
+/*Smart phone nhỏ*/
+@media screen and (min-width: 240px){
+    .banner {
+        margin-top: 6rem;
+        position: relative;
+        .banner__img {
+            img {
+                width: 200%;
+                height: 100%;
+            }
+        }
+    
+        .banner__content {
+            padding: 0rem;
+            display: block;
+            flex-wrap: wrap;
+            align-content: space-between;
+            text-align: left;
+            flex-flow: column nowrap;
+            color: white;
+    
+    
+            .banner__content--link {
+                display: none;
+            }
+    
+            .banner__content--title {
+                padding: 2rem 0rem;
+                h1 {
+                    font-size: 3rem;
+                    line-height: 3.5rem;
+                }
+    
+                h5 {
+                    font-size: 1.5rem;
+                    line-height: 3rem;
+                }
+            }
+    
+        }
+    }
+}
+/*Iphone(480 x 640)*/
+@media screen and (min-width: 320px){
+    .banner {
+        .banner__img {
+            img {
+                width: 200%;
+                height: 100%;
+            }
+        }
+        .banner__content {
+            padding: 0rem;
+            display: block;
+            .banner__content--link {
+                display: none;
+            }
+    
+            .banner__content--title {
+                padding: 2rem 0rem;
+                h1 {
+                    font-size: 3.5rem;
+                    line-height: 4rem;
+                }
+            }
+    
+        }
+    }
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (min-width: 480px){
+    .banner {
+        .banner__img {
+        }
+        .banner__content {
+            padding-right: 1rem;
+            .banner__content--title {
+                padding: 4rem 0rem;
+                h1 {
+                    font-size: 4.5rem;
+                    line-height: 5rem;
+                }
+    
+                h5 {
+                    font-size: 2rem;
+                    line-height: 4rem;
+                }
+            }
+    
+        }
+    }
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (min-width: 768px){
+    .banner {
+        .banner__img {
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .banner__content {
+            padding: 2rem;
+            .banner__content--title {
+                padding: 1rem 0rem;
+                h1 {
+                    font-size: 4rem;
+                    line-height: 5rem;
+                }
+    
+                h5 {
+                    font-size: 1.5rem;
+                    line-height: 3rem;
+                }
+            }
+    
+        }
+    }
+}
+/*Ipad ngang(1024 x 768)*/
+@media screen and (min-width: 1024px){
+    .banner {
+        .banner__content {
+            padding: 2rem;
+            .banner__content--title {
+                padding: 2rem 0rem;
+                h1 {
+                    font-size: 6rem;
+                    line-height: 7rem;
+                }
+                h5 {
+                    font-size: 2.5rem;
+                    line-height: 4rem;
+                }
+            }
+    
+        }
+    }
+}

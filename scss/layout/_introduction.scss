@@ -1,0 +1,175 @@
+/* START PRODUCT  */
+.introduction {
+    background-color: $color_white1;
+    height: $height-6;
+    width: 100%;
+    z-index: $z-index2;
+    position: $position-1;
+    overflow: hidden;
+}
+
+.introduction__behigh{
+    @include pageLayout($width-0, $height-0, $pd-4, $pd-0, $color-trans);
+    @include positionLayout($position-2, $top-1, $left-1, $z-index1);
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.introduction__behigh h1 {
+    @include Layout($display-block, $justify1, $aligh-item1, $text-aligh1);
+    font-size: $font-size5+4;
+    color: $color_white2;
+    text-transform: $text-transform-1;
+    
+}
+
+.introduction-front {
+    @include Layout($display-flex, $justify1, $aligh-item1, $text-aligh2);
+    @include positionLayout($position-2, $top-1, $left-1, $z-index2);
+    @include pageLayout($width-0, $height-0, $pd-0, $pd-0, $color-trans);
+}
+
+
+.introduction-front__image {
+    padding-top: $pd-4;
+    z-index: $z-index3;
+    width: $width-0;
+    height: $width-0+-20;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+.introduction-front__image img {
+    bottom: $bottom-1;
+}
+
+.introduction-front__content {
+    z-index: $z-index3;
+    width: $width-0;
+    padding-left: $pd-2+1;
+}
+.introduction-front__title{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.introduction-front__title p {
+    font-size: $font-size2;
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+}
+
+.introduction-front__title h1 {
+    font-size: $font-size3;
+    text-transform: $text-transform-1;
+    letter-spacing: -1px;
+}
+
+.introduction-front__menu {
+    height: $height-0;
+    z-index: $z-index2;
+
+}
+
+.introduction-front__menu ul {
+    display: $display-flex;
+    padding: $pd-1 $pd-0;
+}
+
+.introduction-front__menu ul li {
+    text-decoration: $text-decoration_none;
+    list-style: $list-style_none;
+    width: $width-0;
+    position: $position-1;
+    margin: $mg-0+0.6 $mg-0;
+    cursor: pointer;
+}
+
+.introduction-front__menu ul li::before {
+    @include before(" ", $width-nomal, $height-0+-90, $position-2, $color-trans, $transition-1, $bottom-5+-40, $left-1);
+}
+
+.introduction-front__menu ul li:hover::before {
+    @include pageLayout($width-0, $height-0+-90, none, none, $color_black1);
+    transition: 0.3s all ease;
+}
+// .introduction-front__menu ul li:hover::before{
+//     // @include pageLayout($width-0, $height-0+-90, none, none, $color_black1);
+//     // height: 10%;
+//     width: 100%;
+//     color: black;
+//     transition: 0.3s all ease;
+// }
+
+@keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  .fadeInRight {
+    animation-name: fadeInRight;
+  }
+ 
+
+/* END PRODUCT  */
+
+@media screen and (max-width: 800px) {
+    .introduction{
+       position: none;
+        // background-color: blue;
+        height: 85vh;
+        .introduction__behigh{
+            display: none;
+        }
+
+        .introduction-front{
+            display: grid;
+            grid-template-columns: repeat(1, auto);
+            justify-content: center;
+            height: 80vh;
+            padding: 5rem 1rem;
+            .introduction-front__image{
+                grid-row: 1 / span 1;
+                width: 100%;
+                height: 100%;
+                padding-top: 0rem;
+                text-align: center;
+                img{
+                    width: 70%;
+                }
+                padding: 0px;
+                margin: 0px;
+            }
+            .introduction-front__content{
+                grid-row: 2 / span 1;
+                width: 100%;
+                padding: 2rem;
+                margin: 0px;
+                // background-color: pink;
+                .introduction-front__title{
+                    p{
+                        display: none;
+                    }
+                    h1{
+                        font-size: 2rem;
+                        margin: 0rem;
+                    }
+                }
+                .introduction-front__button{
+                    grid-row: 3 / span 1;
+                    // background-color: pink;
+                    button{
+                        width: 100%;
+                    }
+                }
+                .introduction-front__menu{
+                 display: none;
+                }
+            }
+        }
+    }
+  }

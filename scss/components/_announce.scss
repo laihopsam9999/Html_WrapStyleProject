@@ -1,0 +1,35 @@
+.successAnnounce{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 2rem; 
+    width: 20rem;
+    height: 20rem;
+    background-color: rgb(255, 253, 253);
+    line-height: 1.7rem;
+    box-shadow: 0 0 0.2rem 0.2rem rgb(230, 225, 225);
+    .successAnnounce__iconClose{
+        text-align: right;
+        width: 100%;
+        i{
+            cursor: pointer;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+    .successAnnounce__green{
+       
+        p{
+            color: rgb(25, 150, 25);
+        }
+    }
+    .successAnnounce__gray{
+        p{
+            color: gray;
+        }
+    }
+    .successAnnounce__button{}
+}

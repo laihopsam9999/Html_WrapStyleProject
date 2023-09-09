@@ -1,0 +1,45 @@
+.gridFourColumn{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.1rem;
+    
+    img{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.8;
+            transition: 0.2s ease-in;
+        }
+    }
+}
+/*Smart phone nhỏ*/
+@media screen and (min-width: 240px){
+    .gridFourColumn{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.1rem;
+    }
+}
+/*Iphone(480 x 640)*/
+@media screen and (min-width: 320px){
+    
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (min-width: 480px){
+    .gridFourColumn{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (min-width: 768px){
+    .gridFourColumn{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/*Ipad ngang(1024 x 768)*/
+@media screen and (min-width: 1024px){
+    .gridFourColumn{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

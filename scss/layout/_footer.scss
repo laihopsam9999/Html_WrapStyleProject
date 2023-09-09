@@ -1,0 +1,98 @@
+/* START FOOTER  */
+.footer {
+    background-color: #181818;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    color: white;
+    height: 15rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.footer__left {
+    width: 100%;
+}
+
+.footer__left--list,
+.footer__left--content,
+.footer__right {
+    margin: 3rem 3rem;
+
+}
+
+.footer__left--list ul {
+    text-align: left;
+    justify-content: left;
+}
+
+.footer__left--list ul li {
+    list-style: none;
+    margin-right: 20px;
+    line-height: 1.5rem;
+    display: inline;
+    align-items: center;
+}
+.footer__left--list ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.footer__right i {
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.footer__right {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.footer__left--content {
+    text-align: left;
+    line-height: 2rem;
+}
+
+/* END FOOTER  */
+
+  /* ----------------------------------START--RESPONSIVE--FOOTER---------------------------------------- */
+  @media screen and (max-width: 800px) {
+    .footer{
+        display: block;
+        height: 100%;
+        .footer__left{
+            padding: 0rem 3rem;
+            .footer__left--list{
+            margin: 3rem 0rem ;
+            // background-color: red;
+            width: 100%;
+            line-height: 4rem;
+            .footer__left--list ul li {
+                margin-right: 0px;
+            }
+            }
+            .footer__left--content{
+                display: none;
+            }
+        }
+        .footer__right{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 0rem 0rem 3rem 0rem;
+            margin: 0rem ;
+            width: 100%;
+            i{
+                font-size: 2rem;
+                margin: 1rem;
+                
+            }
+        }
+    }
+  }
+  /* ----------------------------------END--RESPONSIVE--FOOTER------------------------------------------- */

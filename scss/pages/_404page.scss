@@ -1,0 +1,80 @@
+.Error404{
+    margin-top: 6rem;
+    background-image: url('./../../img/WS-Lamborghini\ Aventador\ Liberty\ Walk-R17.jpg');
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+.ErrorContent404{
+    line-height: 3rem;
+    background-color: rgba(226, 226, 226, 0.466);
+    width: 100%;
+    height: 100%;
+    .ErrorContent404-Image{
+        margin-top: 6rem;
+     
+        img{
+            max-width: 100%;
+          height: 100%;
+        }
+    }
+    .ErrorContent404-title{
+        font-size: 2rem;
+    }
+}
+.ErrorMenu404{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: rgba(226, 226, 226, 0.466); 
+    width: 100%;
+    height: 100%;
+    
+    a{
+        margin: 1rem;
+        cursor: pointer;
+        font-size: 0.9rem;
+    }
+}
+}
+/*Smart phone nhỏ*/
+@media screen and (min-width: 240px){
+    .Error404{
+        height: 100%;
+    .ErrorContent404{
+        .ErrorContent404-Image{
+            margin-top: 4rem;
+        }
+        .ErrorContent404-title{
+            font-size: 1rem;
+        }
+    }
+    .ErrorMenu404{
+        a{
+            font-size: 0.9rem;
+        }
+    }
+    }
+}
+
+/*Ipad ngang(1024 x 768)*/
+@media screen and (min-width: 1200px){
+    .Error404{
+        height: 86vh;
+    
+    .ErrorContent404{
+        line-height: 3rem;
+        .ErrorContent404-Image{
+            margin-top: 6rem;
+        }
+        .ErrorContent404-title{
+            font-size: 2rem;
+        }
+        .ErrorContent404-content{
+            
+        }
+    }
+    }
+}

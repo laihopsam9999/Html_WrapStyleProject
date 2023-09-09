@@ -1,0 +1,58 @@
+//Button Method
+@mixin button($color-border, $background-color, $color, $font-size) {
+    border: 1px solid $color-border;
+    background-color: $background-color;
+    color: $color;
+    font-size: $font-size;
+}
+
+//Layout Method 
+@mixin Layout($display, $justify, $aligh-item, $text-aligh) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $aligh-item;
+    text-align: $text-aligh;
+}
+
+//Hover Button Method 
+@mixin HoverButton($color-border, $background-color, $color) {
+    border: 1px solid $color-border;
+    background-color: $background-color;
+    color: $color;
+}
+
+// pageLayout function
+@mixin pageLayout($width, $height, $pd-X, $pd-Y, $background-color) {
+    width: $width;
+    height: $height;
+    padding: $pd-X $pd-Y;
+    background-color: $background-color;
+}
+
+// position layout absolute
+
+@mixin positionLayout($position, $top, $left, $index) {
+    position: $position;
+    top: $top;
+    left: $left;
+    z-index: $index;
+}
+
+// ::before
+@mixin before($content, $width, $height, $position, $background-color, $transition, $bottom, $left) {
+    content: $content;
+    width: $width;
+    height: $height;
+    position: $position;
+    background: $background-color;
+    transition: $transition;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin shape($clip-path, $width, $height) {
+    clip-path: $clip-path;
+    width: $width;
+    height: $height;
+
+}

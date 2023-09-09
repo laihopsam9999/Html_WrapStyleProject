@@ -1,0 +1,71 @@
+.navbarmanagement{
+    margin-top: 6rem;
+    padding: 2rem 6rem;
+    height: 100vh;
+    .navbarmanagement-sidebar{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0rem;
+       
+    }
+    .navbarmanagement-table{
+        table{
+            tbody{
+               tr{
+                 
+                   background-color: red;
+                   td{
+                    p{
+                        text-overflow: ellipsis; // thêm 3 chấm ở dòng cuối
+                        line-clamp: 1; // số dòng muốn hiển thị
+                        overflow: hidden;
+                        width: 100%;
+                        white-space: pre-wrap;
+                        display: -webkit-box;
+                    }
+                   }
+                
+                   cursor: pointer;
+                   &:hover{
+                       background-color: rgb(212, 211, 211);
+                       color: rgb(15, 99, 209);
+                   }
+                   
+               }
+            }
+        }
+    }
+    .navbarmanagement-pagination{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.sidebarleft{
+    background-color: rgb(221, 218, 218);
+    position: fixed;
+    width: 3rem;
+    height:100%;
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        padding-top:0rem ;
+        
+        li{
+            padding: 0.8rem;
+            list-style: none;
+            cursor: pointer;
+            width: 100%;
+            height: 50px;
+            &::before{
+              
+            }
+           
+            &:hover{
+                background-color: rgb(143, 143, 143);
+            }
+        }
+    }
+}
